@@ -1,16 +1,73 @@
-# React + Vite
+# React Background Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that allows users to change the background color of the page by clicking on color buttons. Built with Vite for fast development and React 19 for modern UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Instantly change the background color by clicking a button
+- Clean, minimal UI
+- Built with React 19 and Vite
 
-## React Compiler
+## Demo
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Demo Screenshot](public/vite.svg)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/agbattanwar-chetan/react-bg-changer.git
+   cd react-bg-changer
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the App
+
+Start the development server:
+
+```sh
+npm run dev
+```
+
+Open your browser and go to [http://localhost:5173](http://localhost:5173) to see the app in action.
+
+### Building for Production
+
+To build the app for production:
+
+```sh
+npm run build
+```
+
+To preview the production build:
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+- `src/` - Source code
+  - `App.jsx` - Main app component
+  - `main.jsx` - Entry point
+  - `assets/` - Static assets
+- `public/` - Public files
+- `index.html` - HTML template
+- `package.json` - Project metadata and scripts
+
+## Customization
+
+To add or remove background colors, edit the `bgColors` array in `src/App.jsx`.
+
+## License
+
+This project is licensed under the MIT License.
